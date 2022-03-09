@@ -1,1 +1,1 @@
-web: gunicorn harmonic-poems.wsgi
+web: gunicorn harmonic_poems.wsgi
