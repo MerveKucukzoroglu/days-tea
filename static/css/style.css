@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
 body {
-    background-color: #F9FAFC;
+    background-color: #B3A7B8;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
@@ -10,26 +10,30 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
     font-weight: 700;
-    color: #1f6779;
+    color: #6E5678;
+}
+
+.menu{
+    float: right;
 }
 
 
 .light-bg {
-    background-color: #fff;
+    background-color: #B3A7B8;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #B3A7B7;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #fff;
 }
 
 .card {
     border: none;
     background-color: transparent;
-    border:#1f6779 1px solid;
+    border:#6E5678 1px solid;
     border-radius: 20px;
 }
 
@@ -83,7 +87,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #6E5678;
     color: white;
     position: relative;
 }
@@ -100,7 +104,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #6E5678;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -128,36 +132,37 @@ body {
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color:#B3A7B7;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #B3A7B7;
 }
 
 .link {
-    color: #23BBBB;
+    color: #B3A7B7;
     text-decoration: none;
 }
 
+
 .link:hover,
 .link:active {
-    color: #445261;
+    color:#6E5678;
     text-decoration: underline;
 }
 
 .btn-like {
-    color: #E84610;
+    color: #8E4576;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #8E4576;
     background: transparent;
     border: none;
 }
