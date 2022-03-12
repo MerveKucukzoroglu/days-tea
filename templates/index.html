@@ -14,10 +14,10 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top"
+                                <img class="card-img-top blur-img"
                                     src="https://res.cloudinary.com/mervecloud/image/upload/v1647083510/kj9os72tldvo6fo9mo5o.png">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top blur-img" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <a href="{% url 'poem_details' post.slug %}" class="post-link">

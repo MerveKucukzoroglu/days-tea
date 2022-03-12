@@ -14,7 +14,10 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
+                <img class="card-img-top"
+                    src="https://res.cloudinary.com/mervecloud/image/upload/v1647083510/kj9os72tldvo6fo9mo5o.png">
+                {% else %}
+                <img class="card-img-top" src=" {{ post.featured_image.url }}">
                 {% endif %}
             </div>
         </div>
@@ -56,7 +59,7 @@
                             {% endif %}
                             <span class="text-secondary"> {{ post.number_of_likes }}</span>
                         </strong>
-                        
+
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
@@ -98,7 +101,7 @@
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
-               
+
                 {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>
@@ -110,7 +113,7 @@
                 </form>
 
                 {% endif %}
-                
+
             </div>
         </div>
     </div>

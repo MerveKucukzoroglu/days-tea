@@ -41,7 +41,7 @@ body {
     position: relative;
 }
 
-.card-img-top {
+.blur-img {
     filter: blur(5px);
     height: 100%;
     background-position: center;
