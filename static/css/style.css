@@ -175,7 +175,15 @@ body {
 }
 
 .social-link {
+    color: white;
     font-size: 25px;
     margin-top:5px;
     padding: 5px;
+}
+
+/* Account styles */
+.logout-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
