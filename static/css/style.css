@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
 body {
-    background-color: #B3A7B8;
+    background-color:#B3A7B7;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
 
 .logo {
     font-family: 'Dancing Script', cursive;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
     color: #6E5678;
 }
@@ -19,22 +19,38 @@ body {
 
 
 .light-bg {
-    background-color: #B3A7B8;
+    background-color:#B3A7B7;
 }
 
-.dark-bg {
-    background-color: #B3A7B7;
+.footer-bg {
+    background-color:#B3A7B7;
+    color:white;
 }
 
 .main-bg {
     background-color: #fff;
 }
 
-.card {
+.list-box {
     border: none;
     background-color: transparent;
     border:#6E5678 1px solid;
     border-radius: 20px;
+}
+
+.post-box {
+    width:80%;
+    padding: 10px;
+    margin:auto;
+}
+
+.post-box-content {
+    border: none;
+    text-align: center;
+}
+
+.comment-content {
+    border: none;
 }
 
 .image-container {
@@ -81,35 +97,19 @@ body {
     margin-top: 10px;
     overflow: hidden;
     position: relative;
-    display: inline-block;
     height: 33vh;
-    width: 100%;
+    width:80%;
+    padding: 10px;
+    margin:auto;
 }
 
-.masthead-text {
-    background-color: #6E5678;
-    color: white;
-    position: relative;
-}
 
 .masthead-image {
-    position: relative;
-    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #6E5678;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
 
 .post-link {
     text-decoration: none;
@@ -118,28 +118,35 @@ body {
 
 .post-link:hover,
 .page-link {
-    color:black;
+    color:#B3A7B7;
 }
 
 .post-title {
-    margin-top: 20%;
-    margin-left: 5%;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 700;
+    color: #6E5678;
+    margin-top: 20px;
 }
 
 .post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
+    margin-right: 10%;
+    color:#B3A7B7;
+    text-align: right;
 }
 
 .btn-signup {
-    background-color:#B3A7B7;
+    background-color:#6E5678;
     color: #fff;
+    margin-top: 10px;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #B3A7B7;
+    background-color:#B3A7B7;
+    color:#fff;
 }
 
 .link {
@@ -150,7 +157,7 @@ body {
 
 .link:hover,
 .link:active {
-    color:#6E5678;
+    color:#B3A7B7;
     text-decoration: underline;
 }
 
@@ -165,4 +172,10 @@ body {
     color: #8E4576;
     background: transparent;
     border: none;
+}
+
+.social-link {
+    font-size: 25px;
+    margin-top:5px;
+    padding: 5px;
 }
