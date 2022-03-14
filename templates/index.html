@@ -3,16 +3,16 @@
 {% block content %}
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="justify-content-center">
-            <p class="intro-msg">Poem is all about rhythm, harmony and soul. 
-                Find yourself in one of them or share one of yours with us!</p>
-            <span class="welcome-msg">Welcome to Harmonic Poems!</span>
-        </div>
+    <div class="row intro-msg">
+
+        <p>Poem is all about rhythm, harmony and soul.</p>
+        <p>Find yourself in one of them or share one of yours with us!</p>
+        <p>Welcome to Harmonic Poems!</p>
+
     </div>
-    <div class="row">
-        <button><a class="nav-link" href="{% url 'poem_list' %}">Poems</a></button>
-        <button><a class="nav-link" href="#">Login</a></button>
+    <div class="d-flex justify-content-center">
+        <a class="home-link" href="{% url 'poem_list' %}"><button class="btn btn-signup btn-lg">POEMS</button></a>
+        <a class="home-link" href="#"><button class="btn btn-signup btn-lg">LOGIN</button></a>
     </div>
 </div>
 {%endblock%}
