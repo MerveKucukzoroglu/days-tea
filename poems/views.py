@@ -9,25 +9,12 @@ def index(request):
     return render(request, 'index.html')
 
 
-class PostList(View):
+class PostList(generic.ListView):
     """Site pagination and order of poems"""
-    def get(self, request, *args, **kwargs):
-        """postlist"""
-        model = Post
-        queryset = Post.objects.filter(status=1).order_by('-created_on')
-        post = get_object_or_404(queryset)
-        template_name = 'poem_list.html'
-        paginate_by = 6
-
-        return render(
-            request, 'poem_list.html',
-            {
-                "model": model,
-                "post": post,
-                "template_name": template_name,
-                "paginate_by": paginate_by
-            },
-        )
+    model = Post
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'poem_list.html'
+    paginate_by = 6
 
 
 class PoemDetails(View):
