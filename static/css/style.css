@@ -13,22 +13,23 @@ body {
     color: #6E5678;
 }
 
-.menu{
+/* .menu{
     float: right;
-}
+} */
 
 
 .light-bg {
-    background-color:#B3A7B7;
+    background-color:white;
 }
 
 .footer-bg {
-    background-color:#B3A7B7;
+    background-color:#6E5678;
     color:white;
 }
 
 .main-bg {
     background-color: #fff;
+    margin: 3em auto;
 }
 
 .list-box {
