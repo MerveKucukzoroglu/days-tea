@@ -19,7 +19,7 @@ body {
 
 
 .light-bg {
-    background-color:white;
+    background-color:rgb(245, 242, 250);
 }
 
 .footer-bg {
@@ -119,7 +119,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color:#B3A7B7;
+    color:#e9e1ec;
 }
 
 .post-title {
