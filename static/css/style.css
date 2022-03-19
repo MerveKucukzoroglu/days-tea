@@ -19,7 +19,7 @@ body {
 
 
 .light-bg {
-    background-color:rgb(245, 242, 250);
+    background-color:#F2EDF5;
 }
 
 .footer-bg {
@@ -183,7 +183,7 @@ body {
 }
 
 .social-link:hover {
-    color:#fff8b0;
+    color:#F9F871;
 }
 
 /* Account styles */
@@ -194,7 +194,7 @@ body {
 }
 
 .fa-user {
-    color:#6E5678;
+    color:#393939;
     font-size: 40px;
     padding: 10px;
 }
@@ -203,10 +203,22 @@ body {
     color:#513e58;
 }
 
+.profile-item {
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+}
+
+.profile-item-link {
+    width: 100%;
+    background-color:#393939;
+    color: white;
+}
+
 /* home page */
 .intro-msg, .profile {
     text-align: center;
-    margin:40px 20px 20px 20px;
+    margin:7em 20px 20px 20px;
     line-height: 30px;
 }
 
