@@ -15,7 +15,7 @@
         {% if user.is_authenticated %}
             <a class="home-link" href="#"><button class="btn btn-signup btn-lg">ACCOUNT</button></a>
         {% else %}
-            <a class="home-link" href="#"><button class="btn btn-signup btn-lg">LOGIN</button></a>
+            <a class="home-link" href="{% url 'account_login' %}"><button class="btn btn-signup btn-lg">LOGIN</button></a>
         {% endif %}
 
     </div>
