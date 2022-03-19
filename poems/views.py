@@ -29,9 +29,23 @@ def publish(request):
         request,
         "publish.html",
         {
-            "poem_form": PoemForm()
+            "poem_form": PoemForm(),
+            "published": False
         },
     )
+
+    def post(self, request, slug, *args, **kwargs):
+        """getting relevent post information"""
+        model = Post
+        poem_form = PoemForm(data=request.POST)
+
+        return render(
+            request,
+            "publish.html",
+            {
+                "published": True,
+            },
+        )
 
 
 class PoemDetails(View):

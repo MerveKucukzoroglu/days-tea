@@ -6,6 +6,12 @@
 
 <div class="container-fluid">
 
+    {% if published %}
+    <div class="alert alert-success msg" role="alert">
+        Your Poem is awaiting approval
+    </div>
+    {% endif %}
+
     <h3>Publish your poem</h3>
     <p>Publishing as: {{ user.username }}</p>
     <form method="post">
