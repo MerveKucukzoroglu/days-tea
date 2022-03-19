@@ -10,8 +10,8 @@
     <div class="alert alert-success msg" role="alert">
         Your Poem is awaiting approval
     </div>
-    {% endif %}
-
+    {% else %}
+    {% if user.is_authenticated %}
     <h3>Publish your poem</h3>
     <p>Publishing as: {{ user.username }}</p>
     <form method="post">
@@ -19,7 +19,8 @@
         {% csrf_token %}
         <button type="submit" class="btn btn-signup btn-lg">Submit</button>
     </form>
-    
+    {% endif %}
+    {% endif %}
    
 </div>
 {%endblock%}
