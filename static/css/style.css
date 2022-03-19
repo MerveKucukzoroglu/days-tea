@@ -189,6 +189,12 @@ body {
     margin-right: auto;
 }
 
+.fa-user {
+    color:#6E5678;
+    font-size: 40px;
+    padding: 10px;
+}
+
 /* home page */
 .intro-msg {
     text-align: center;
