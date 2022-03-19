@@ -9,4 +9,5 @@ urlpatterns = [
     path('<slug:slug>/', views.PoemDetails.as_view(), name='poem_details'),
     path('like/<slug:slug>', views.PostLike.as_view(), name='poem_likes'),
     path('profile', views.Profile, name='profile'),
+    path('publish_poem', views.PublishPoem, name='publish_poem'),
 ]

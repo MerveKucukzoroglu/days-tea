@@ -21,6 +21,10 @@ def Profile(request):
     """Site pagination and order of poems"""
     return render(request, 'profile.html')
 
+def PublishPoem(request):
+    """Site pagination and order of poems"""
+    return render(request, 'publish_poem.html')
+
 
 class PoemDetails(View):
     """Open and view a post"""
