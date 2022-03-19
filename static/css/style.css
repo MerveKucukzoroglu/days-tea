@@ -206,3 +206,7 @@ body {
     border-color: none;
     border-radius: 20px;
 }
+
+#msg {
+    margin-top: 50px;
+}
