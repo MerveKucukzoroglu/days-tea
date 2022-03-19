@@ -4,14 +4,10 @@
 
 <div class="container-fluid">
     <div class="row profile">
-
-        <p>Welcome to your profile page {{ user.username }}!</p>
-        
+        <p>Hi {{ user.username }}, we are happy to see you among Harmonic Poets!</p>
     </div>
     <div class="d-flex justify-content-center">
-       
-            <a class="home-link" href="{% url 'account_logout' %}"><button class="btn btn-signup btn-lg">LOGOUT</button></a>
-        
+        <a class="btn btn-signup btn-lg btn-link" href="{% url 'account_logout' %}">LOGOUT</a>
     </div>
 </div>
 {%endblock%}
