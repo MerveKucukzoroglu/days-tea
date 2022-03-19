@@ -1,9 +1,10 @@
 """Views file for the Poems"""
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+
 
 def index(request):
     return render(request, 'index.html')
@@ -17,13 +18,14 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
-def Profile(request):
+def profile(request):
     """Site pagination and order of poems"""
     return render(request, 'profile.html')
 
-def PublishPoem(request):
+
+def publish(request):
     """Site pagination and order of poems"""
-    return render(request, 'publish_poem.html')
+    return render(request, 'publish.html')
 
 
 class PoemDetails(View):
