@@ -200,7 +200,7 @@ body {
 }
 
 .fa-user:hover {
-    color:#513e58;
+    color:#6E5678;
 }
 
 .profile-item {
@@ -213,6 +213,10 @@ body {
     width: 100%;
     background-color:#393939;
     color: white;
+}
+
+.profile-item-link:hover {
+    background-color: #6E5678;
 }
 
 /* home page */
