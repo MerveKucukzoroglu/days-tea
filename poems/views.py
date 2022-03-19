@@ -17,6 +17,11 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
+def Profile(request):
+    """Site pagination and order of poems"""
+    return render(request, 'profile.html')
+
+
 class PoemDetails(View):
     """Open and view a post"""
     def get(self, request, slug, *args, **kwargs):
@@ -70,6 +75,7 @@ class PoemDetails(View):
                 "comment_form": CommentForm()
             },
         )
+
 
 class PostLike(View):
     """class view for like and unlike a post"""
