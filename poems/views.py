@@ -3,7 +3,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PoemForm
 
 
 def index(request):
@@ -25,7 +25,13 @@ def profile(request):
 
 def publish(request):
     """Site pagination and order of poems"""
-    return render(request, 'publish.html')
+    return render(
+        request,
+        "publish.html",
+        {
+            "poem_form": PoemForm()
+        },
+    )
 
 
 class PoemDetails(View):
