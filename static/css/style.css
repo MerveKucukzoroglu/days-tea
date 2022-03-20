@@ -30,6 +30,7 @@ body {
 .main-bg {
     background-color: #fff;
     margin: 3em auto;
+    width: 100%;
 }
 
 .list-box {
@@ -244,4 +245,25 @@ body {
 
 #msg {
     margin-top: 50px;
+}
+
+/*signup page*/
+
+.signup-container {
+    border: #6E5678 2px solid;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    line-height: 30px;
+    width: 60%;
+}
+
+.title {
+    color:#6E5678;
+}
+
+.signin-input {
+    border:#393939;
+    border-radius: 20px;
 }
