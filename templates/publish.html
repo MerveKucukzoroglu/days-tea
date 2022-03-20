@@ -7,9 +7,7 @@
 <div class="container-fluid post-form-container">
 
     {% if published %}
-    <div class="alert alert-success msg" role="alert">
-        Your Poem is awaiting approval
-    </div>
+        {{ message }}
     {% else %}
     {% if user.is_authenticated %}
     <h3 class="title">Publish your poem</h3>

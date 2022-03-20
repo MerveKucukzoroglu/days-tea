@@ -6,6 +6,7 @@ from .models import Post
 from .forms import CommentForm, PoemForm
 from django.contrib.auth.models import User
 from django.utils.text import slugify
+from django.contrib import messages
 
 
 def index(request):
@@ -34,6 +35,9 @@ def publish(request):
             form = poem_form.save(commit=False)
             form.author = User.objects.get(username=request.user.username)
             form.slug = form.title.replace(" ", "-")
+            messages.success(
+                request, 'Your poem is successfully submitted for approval'
+                )
             form.save()
 
     poem_form = PoemForm()
