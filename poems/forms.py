@@ -14,4 +14,4 @@ class PoemForm(forms.ModelForm):
     """Form to publish a poem"""
     class Meta:
         model = Post
-        fields = ('title', 'content',)
+        fields = ('title', 'content', 'excerpt', 'featured_image',)

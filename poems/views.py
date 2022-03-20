@@ -24,28 +24,31 @@ def profile(request):
 
 
 def publish(request):
-    """Site pagination and order of poems"""
+    """publish poem as authenticated user"""
+    if request.method == 'POST':
+        poem_form = PoemForm(request.POST)
+
+    poem_form = PoemForm()
+    context = {'poem_form': poem_form}
+
     return render(
         request,
-        "publish.html",
-        {
-            "poem_form": PoemForm(),
-            "published": False
-        },
+        'publish.html', context
     )
 
-    def post(self, request, slug, *args, **kwargs):
-        """getting relevent post information"""
-        model = Post
-        poem_form = PoemForm(data=request.POST)
+    # def post(self, request, slug, *args, **kwargs):
+    #     """getting relevent post information"""
+    #     model = Post
+    #     poem_form = PoemForm()
 
-        return render(
-            request,
-            "publish.html",
-            {
-                "published": True,
-            },
-        )
+    #     return render(
+    #         request,
+    #         "publish.html",
+    #         {
+    #             "published": True,
+    #             "poem_form": poem_form,
+    #         },
+    #     )
 
 
 class PoemDetails(View):
