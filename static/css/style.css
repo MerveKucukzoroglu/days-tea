@@ -33,30 +33,22 @@ body {
     width: 100%;
 }
 
+/*poems post styles*/
+
 .list-box {
     border: none;
     background-color: transparent;
     border:#6E5678 1px solid;
     border-radius: 20px;
-}
-
-.post-box {
-    width:80%;
-    padding: 10px;
-    margin:auto;
-}
-
-.post-box-content {
-    border: none;
-    text-align: center;
-}
-
-.comment-content {
-    border: none;
+    height: 300px;
+    width:auto;
+    margin: 30px;
 }
 
 .image-container {
-    position: relative;
+    height: 240px;
+    width: auto;
+    object-fit: scale-down;
 }
 
 .blur-img {
@@ -93,6 +85,7 @@ body {
 .post-date {
     color: black;
     font-weight: 400;
+    margin-top: 10px;
 }
 
 .masthead {
@@ -112,6 +105,20 @@ body {
     margin-right: auto;
 }
 
+.post-box {
+    width:80%;
+    padding: 10px;
+    margin:auto;
+}
+
+.post-box-content {
+    border: none;
+    text-align: center;
+}
+
+.comment-content {
+    border: none;
+}
 
 .post-link {
     text-decoration: none;
