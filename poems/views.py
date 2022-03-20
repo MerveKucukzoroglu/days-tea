@@ -28,7 +28,7 @@ def profile(request):
 def publish(request):
     """publish poem as authenticated user"""
     if request.method == 'POST':
-        poem_form = PoemForm(request.POST)
+        poem_form = PoemForm(request.POST, request.FILES)
 
         if poem_form.is_valid():
             form = poem_form.save(commit=False)
