@@ -4,6 +4,8 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PoemForm
+from django.contrib.auth.models import User
+from django.utils.text import slugify
 
 
 def index(request):
@@ -28,6 +30,12 @@ def publish(request):
     if request.method == 'POST':
         poem_form = PoemForm(request.POST)
 
+        if poem_form.is_valid():
+            form = poem_form.save(commit=False)
+            form.author = User.objects.get(username=request.user.username)
+            form.slug = form.title.replace(" ", "-")
+            form.save()
+
     poem_form = PoemForm()
     context = {'poem_form': poem_form}
 
@@ -35,20 +43,6 @@ def publish(request):
         request,
         'publish.html', context
     )
-
-    # def post(self, request, slug, *args, **kwargs):
-    #     """getting relevent post information"""
-    #     model = Post
-    #     poem_form = PoemForm()
-
-    #     return render(
-    #         request,
-    #         "publish.html",
-    #         {
-    #             "published": True,
-    #             "poem_form": poem_form,
-    #         },
-    #     )
 
 
 class PoemDetails(View):
