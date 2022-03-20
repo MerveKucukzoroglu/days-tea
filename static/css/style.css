@@ -267,3 +267,25 @@ body {
     border:#393939;
     border-radius: 20px;
 }
+
+/* logout modal */
+.close {
+    background-color: transparent;
+    border: none;
+}
+
+.fa-times {
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+.fa-times:hover {
+    color:#F9F871;
+    font-size: larger;
+}
+
+.logout-modal {
+    background-color:#393939;
+    color:white;
+}
