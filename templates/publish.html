@@ -4,7 +4,7 @@
 
 {% load crispy_forms_tags%}
 
-<div class="container-fluid">
+<div class="container-fluid post-form-container">
 
     {% if published %}
     <div class="alert alert-success msg" role="alert">
@@ -12,7 +12,7 @@
     </div>
     {% else %}
     {% if user.is_authenticated %}
-    <h3>Publish your poem</h3>
+    <h3 class="title">Publish your poem</h3>
     <p>Publishing as: {{ user.username }}</p>
     <form method="post">
         {{ poem_form | crispy }}

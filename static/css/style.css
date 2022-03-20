@@ -289,3 +289,13 @@ body {
     background-color:#393939;
     color:white;
 }
+
+/*Publish poem form*/
+
+.post-form-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    line-height: 30px;
+}
