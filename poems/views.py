@@ -58,6 +58,11 @@ def my_poems(request):
 
 def edit_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
+    if request.method == 'POST':
+        poem_form = PoemForm(request.POST, instance=post)
+        if poem_form.is_valid():
+            poem_form.save()
+            return redirect('my_poems')
     poem_form = PoemForm(instance=post)
     context = {'poem_form': poem_form}
     return render(request, 'edit_post.html', context)
