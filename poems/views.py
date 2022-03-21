@@ -61,7 +61,12 @@ def edit_post(request, post_id):
     if request.method == 'POST':
         poem_form = PoemForm(request.POST, instance=post)
         if poem_form.is_valid():
-            poem_form.save()
+            form = poem_form.save(commit=False)
+            form.approved = False
+            messages.success(
+                request, 'Updated poem is successfully submitted for approval'
+                )
+            form.save()
             return redirect('my_poems')
     poem_form = PoemForm(instance=post)
     context = {'poem_form': poem_form}
