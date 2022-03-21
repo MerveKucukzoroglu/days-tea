@@ -201,7 +201,7 @@ body {
     margin-right: auto;
 }
 
-.fa-user, .fa-badge-check {
+.fa-user {
     color:#393939;
     font-size: 40px;
     padding: 10px;
@@ -317,4 +317,28 @@ body {
 
 .my-list {
     margin-top: 30px;
+    border: #393939 1px solid;
+}
+
+.status {
+    background-color:#393939;
+    color:white;
+}
+
+.list-title {
+    color:#6E5678;
+    text-decoration: none;
+}
+
+.fa-badge-check {
+    color:#b3f971;
+}
+
+.published {
+    text-decoration: none;
+    color:#6E5678;
+}
+
+.published:hover {
+    color:#8E4576;
 }
