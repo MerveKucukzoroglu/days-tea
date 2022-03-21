@@ -309,13 +309,12 @@ body {
 
 /*Manage poems page*/
 
-.my-poem-list {
+.my-poems-container {
+    margin: 70px 20px 20px 20px;
     width: 80%;
-    height: 300px;
+    display: block;
 }
 
-.my-poem-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+.my-list {
+    margin-top: 30px;
 }
