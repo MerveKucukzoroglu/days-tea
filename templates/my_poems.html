@@ -3,8 +3,22 @@
 {% block content %}
 
 <div class="container-fluid">
-    <div class="row">
-        My Published Poems:
-    </div>
+    
+        <h3 class="title">My Poems:</h3>
+        <div class="col">
+            {% for post in posts %}
+                <div>
+                    {% if post.approved %}
+                    <a href="{% url 'poem_details' post.slug %}">{{ post.title }}</a>
+                    <span class="status"> - Approved</span>
+                    <i class="far fa-badge-check"></i>
+                    {% else %}
+                    <p>{{ post.title }}<span class="status"> - Pending</span></p>
+                    
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+   
 </div>
 {%endblock%}

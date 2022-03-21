@@ -39,6 +39,7 @@ def publish(request):
                 request, 'Your poem is successfully submitted for approval'
                 )
             form.save()
+        return redirect('my_poems')
 
     poem_form = PoemForm()
     context = {'poem_form': poem_form}
@@ -50,11 +51,9 @@ def publish(request):
 
 
 def myPoems(request):
-    return render(request, 'my_poems.html')
-
-
-def pendingApproval(request):
-    return render(request, 'pending_approval.html')
+    logged_in_user = request.user
+    logged_in_user_posts = Post.objects.filter(author=logged_in_user)
+    return render(request, 'my_poems.html', {'posts': logged_in_user_posts})
 
 
 class PoemDetails(View):
