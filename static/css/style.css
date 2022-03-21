@@ -330,8 +330,9 @@ body {
     text-decoration: none;
 }
 
-.fa-badge-check {
+.fa-check {
     color:#b3f971;
+    margin-left: 10px;
 }
 
 .published {
@@ -341,4 +342,9 @@ body {
 
 .published:hover {
     color:#8E4576;
+}
+
+.my-poem-date {
+    font-size: smaller;
+    color:#393939;
 }

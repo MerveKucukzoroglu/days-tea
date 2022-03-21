@@ -50,10 +50,17 @@ def publish(request):
     )
 
 
-def myPoems(request):
+def my_poems(request):
     logged_in_user = request.user
     logged_in_user_posts = Post.objects.filter(author=logged_in_user)
     return render(request, 'my_poems.html', {'posts': logged_in_user_posts})
+
+
+def edit_post(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    poem_form = PoemForm(instance=post)
+    context = {'poem_form': poem_form}
+    return render(request, 'edit_post.html', context)
 
 
 class PoemDetails(View):

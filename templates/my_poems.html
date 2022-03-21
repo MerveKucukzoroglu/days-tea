@@ -7,7 +7,7 @@
     {% for post in posts %}
         <div class="card my-list">
             {% if post.approved %}
-                <h5 class="card-header status">Published <i class="fas fa-badge-check"></i></h5>
+                <h5 class="card-header status">Published <i class="fas fa-check"></i></h5>
             {% else %}
                 <h5 class="card-header status">Pending Approval</h5>
             {% endif %}
@@ -18,13 +18,16 @@
                     <h5 class="card-title list-title">{{ post.title }}</h5>
                 {% endif %}
                 <p class="card-text">{{ post.excerpt }}</p>
-                <p class="card-text post-date">{{ post.created_on }}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text my-poem-date">{{ post.created_on }}</p>
+                <a class="btn btn-warning btn-lg" href="edit/{{ post.id }}">Edit</a>
             
             </div>
         </div>
+        {% empty %}
+            <p>You have no poems</p>
+            <a class="btn btn-signup btn-lg profile-item-link " href="{% url 'publish' %}">Publish a Poem</a>
     {% endfor %}
-
+    
 
 </div>
 {%endblock%}
