@@ -1,24 +1,71 @@
 {% extends "base.html" %}
 
 {% block content %}
-
 <div class="container-fluid">
-    
-        <h3 class="title">My Poems:</h3>
-        <div class="col">
-            {% for post in posts %}
-                <div>
-                    {% if post.approved %}
-                    <a href="{% url 'poem_details' post.slug %}">{{ post.title }}</a>
-                    <span class="status"> - Approved</span>
-                    <i class="far fa-badge-check"></i>
+    <h3 class="title">My Poems:</h3>
+    {% for post in posts %}
+    {% if post.approved %}
+        <div class="card mb-3" style="max-width:80%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    {% if "placeholder" in post.featured_image.url %}
+                        <img class="card-img-top"
+                            src="https://res.cloudinary.com/mervecloud/image/upload/v1647091149/vfoz5bcqdizh9sxejur8.jpg">
                     {% else %}
-                    <p>{{ post.title }}<span class="status"> - Pending</span></p>
-                    
+                        <img class="card-img-top" src=" {{ post.featured_image.url }}">
                     {% endif %}
                 </div>
-            {% endfor %}
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="{% url 'poem_details' post.slug %}">{{ post.title }}</a></h5>
+                        <p class="card-text">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item status">Status: Approved</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                              </ul>
+                              <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                              </div>
+                        </p>
+                        <p class="card-text"><small class="text-muted">{{ post.created_on }}</small></p>
+                    </div>
+                </div>
+            </div>
         </div>
-   
+    {% else %}
+        <div class="card mb-3" style="max-width:80%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    {% if "placeholder" in post.featured_image.url %}
+                        <img class="card-img-top"
+                            src="https://res.cloudinary.com/mervecloud/image/upload/v1647091149/vfoz5bcqdizh9sxejur8.jpg">
+                    {% else %}
+                        <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                    {% endif %}
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item status">Status: Pending</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </p>
+                        <p class="card-text"><small class="text-muted">{{ post.created_on }}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% endfor %}
+
 </div>
 {%endblock%}
