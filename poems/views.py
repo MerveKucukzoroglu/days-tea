@@ -73,6 +73,13 @@ def edit_post(request, post_id):
     return render(request, 'edit_post.html', context)
 
 
+def delete_post(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    post.delete()
+    messages.success(request, 'Poem deleted!')
+    return redirect('my_poems')
+
+
 class PoemDetails(View):
     """Open and view a post"""
     def get(self, request, slug, *args, **kwargs):
