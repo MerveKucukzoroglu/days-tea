@@ -14,10 +14,10 @@
                 <a class="btn btn-signup btn-lg profile-item-link " href="{% url 'publish' %}">Publish a Poem</a>
             </li>
             <li class="profile-item">
-                <a class="btn btn-signup btn-lg profile-item-link" href="#">My Published Poems</a>
+                <a class="btn btn-signup btn-lg profile-item-link" href="{% url 'my_poems' %}">My Published Poems</a>
             </li>
             <li class="profile-item">
-                <a class="btn btn-signup btn-lg profile-item-link" href="#">My Pending Approval Poems</a>
+                <a class="btn btn-signup btn-lg profile-item-link" href="{% url 'pending_approval' %}">My Pending Approval Poems</a>
             </li>
             <li class="profile-item">
                 <button type="button" class="btn btn-signup btn-lg btn-link" data-bs-toggle="modal" data-bs-target="#logoutModal">LOGOUT</button>

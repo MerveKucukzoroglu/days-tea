@@ -49,6 +49,14 @@ def publish(request):
     )
 
 
+def myPoems(request):
+    return render(request, 'my_poems.html')
+
+
+def pendingApproval(request):
+    return render(request, 'pending_approval.html')
+
+
 class PoemDetails(View):
     """Open and view a post"""
     def get(self, request, slug, *args, **kwargs):
