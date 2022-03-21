@@ -306,3 +306,16 @@ body {
     padding: 10px;
     line-height: 30px;
 }
+
+/*Manage poems page*/
+
+.my-poem-list {
+    width: 80%;
+    height: 300px;
+}
+
+.my-poem-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
