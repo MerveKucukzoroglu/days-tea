@@ -9,3 +9,9 @@ class TestPoemForm(TestCase):
         self.assertFalse(form.is_valid())
         self.assertIn('title', form.errors.keys())
         self.assertEqual(form.errors['title'][0], 'This field is required.')
+
+    def test_post_content_is_required(self):
+        form = PoemForm(({'content': ''}))
+        self.assertFalse(form.is_valid())
+        self.assertIn('content', form.errors.keys())
+        self.assertEqual(form.errors['content'][0], 'This field is required.')
