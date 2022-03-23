@@ -120,13 +120,23 @@ body {
     border: none;
 }
 
+.page-link {
+    border-color: #393939;
+    color:#393939;
+}
+
+.page-link:hover {
+    color:#393939;
+    background-color:#e9e1ec;
+    border-color: #393939;
+}
+
 .post-link {
     text-decoration: none;
     color:#F9FAFC;
 }
 
-.post-link:hover,
-.page-link {
+.post-link:hover {
     color:#e9e1ec;
 }
 
