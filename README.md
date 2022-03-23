@@ -11,6 +11,7 @@ The Live Site can be found [here](https://harmonic-poems.herokuapp.com/).
     * [Member User](#member-user)
     * [General User](#general-user)
 * [Features](#features)
+    * [Existing Features](#existing-features)
 * [Future Features](#future-features)
 * [Wireframes](#wireframes)
 * [Structure](#structure)
@@ -25,6 +26,7 @@ The Live Site can be found [here](https://harmonic-poems.herokuapp.com/).
 * [Acknowledgements](#acknowledgements)
 
 # User Experience
+I designed this platform with desgin thinking approach. With only the necessary content/information. User can surf the site easily and get the information they are looking for.
 Please find all my defined user stories [here](https://github.com/MerveKucukzoroglu/harmonic-poems/labels/USER-STORIES)
 ## Admin
 * As a Site Admin I can approve or disapprove posts so that I can filter out objectionable posts.
@@ -45,9 +47,18 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
 * As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
 
 
-
 # Features
+## Existing Features
+* **Home Page**
+    * The home page is minimal content to not bother user with loads of information. The page has a Navigation bar and two buttons on the page. If the user is not registered user and not logged in. The navbar has a login/register options and the button to take user ot login page.
+        ![Home Page](/assets/images/home-page.png)
 
+    * If the user is logged in member, the navigation bar will have an accunts icon and instead of login, one of the buttons takes the user to their account profile.
+    ![Home Page](/assets/images/member-home-page.png)
+    
+Poem button takes any site user to the poems page of the list of poems.
+
+    
 # Future Features
 
 # Wireframes
