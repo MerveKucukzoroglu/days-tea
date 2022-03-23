@@ -25,9 +25,26 @@ The Live Site can be found [here](https://harmonic-poems.herokuapp.com/).
 * [Acknowledgements](#acknowledgements)
 
 # User Experience
+Please find all my defined user stories [here](https://github.com/MerveKucukzoroglu/harmonic-poems/labels/USER-STORIES)
 ## Admin
+* As a Site Admin I can approve or disapprove posts so that I can filter out objectionable posts.
+* As a Site Admin I can create, read, update and delete posts so that I can manage my blog content.
+* As a Site Admin I can aproove Posts before it is published so that the site content will be consistent.
+
 ## Member User
+* As a Member User I can register an account so that I can manage my posts, comment and like.
+* As a Member User I can post/add/edit/delete poems so that I can share and manage my poems.
+* As a Member User I can like or unlike a post so that I can interact with the content.
+* As a Member User I can leave comments on a post so that I can be involved in the conversation.
+* As a Member User I can view my posts status of approval so that I can manage my poems.
+
 ## General User
+* As a Site User I can view a list of posts so that I can select one to read.
+* As a Site User I can click on a post so that I can read the full text.
+* As a Site User / Admin user I can view comments on an individual post so that I can read the conversation.
+* As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
+
+
 
 # Features
 
