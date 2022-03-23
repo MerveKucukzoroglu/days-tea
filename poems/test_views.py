@@ -21,3 +21,10 @@ class TestProfileViews(TestCase):
         response = self.client.get('/profile')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'profile.html')
+
+
+class TestPublishPoemViews(TestCase):
+    def test_can_publish_poem(self):
+        response = self.client.get('/publish')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'publish.html')
