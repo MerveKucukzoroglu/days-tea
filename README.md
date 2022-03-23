@@ -6,6 +6,23 @@ Harmonic Poems is a platform for poets to share their poems and inspire young po
 The Live Site can be found [here](https://harmonic-poems.herokuapp.com/).
 
 # Table of Contents
+* [User Experience](#user-experience)
+    * [Admin](#admin)
+    * [Member User](#member-user)
+    * [General User](#general-user)
+* [Features](#features)
+* [Future Features](#future-features)
+* [Wireframes](#wireframes)
+* [Structure](#structure)
+* [Databases](#databases)
+    * [Post Model](#post-model)
+    * [Comment Model](#comment-model)
+* [Technologies Used](#technologies-used)
+* [Frameworks, Libraries & Tools Used](#frameworks-libraries--tools-used)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
+* [Acknowledgements](#acknowledgements)
 
 # User Experience
 ## Admin
@@ -21,11 +38,8 @@ The Live Site can be found [here](https://harmonic-poems.herokuapp.com/).
 # Structure
 
 # Databases
-## User Model
 ## Post Model
 ## Comment Model
-## Like Model
-## Poem Type Model
 
 # Technologies Used
 
