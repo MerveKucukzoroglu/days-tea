@@ -14,7 +14,7 @@ body {
 }
 
 /*Logo media queries*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .logo {
         font-size: 35px;
     }
@@ -53,12 +53,12 @@ body {
 }
 
 /*Media queries for post list box*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .list-box {
         margin: 10px;
     }
 }
-@media screen and (max-width: 900px) and (min-width: 400px) {
+@media screen and (max-width: 900px) and (min-width: 450px) {
     .list-box {
         margin: 20px;
     }
@@ -240,19 +240,11 @@ body {
     color:#6E5678;
 }
 
-.nav-link {
-    color:#393939;
-}
-
-.nav-link:hover {
-    color:#6E5678;
-}
-
 /*Media queries for navbar*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .fa-user {
         color:#393939;
-        font-size: 20px;
+        font-size: 25px;
         padding: 5px;
     }
 
@@ -330,6 +322,13 @@ body {
 .signin-input {
     border:#393939;
     border-radius: 20px;
+}
+
+/*Signup page small screen media queries*/
+@media screen and (max-width: 450px) {
+    .signup-container {
+        width: 90%;
+    }
 }
 
 /* logout modal */
