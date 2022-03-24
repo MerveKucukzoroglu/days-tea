@@ -74,7 +74,14 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
 
         ![Poems Page](/static/assets/images/prev.png)
         
-
+* **Sign Up**
+    * Users can register and create their own account. 
+    * The sign-up form checks if the username is used by someone else, alerts the user if any infomration is incorrect, such as passwords not matching or empty required fields.
+    * Creating account enables access to more features. 
+    * Registered members can publish and manage their poems (edit/delete).
+    * These users can also like and comment on others posts.
+        
+        ![Sign Up](/static/assets/images/sign-up.png) 
 
 # Future Features
 
