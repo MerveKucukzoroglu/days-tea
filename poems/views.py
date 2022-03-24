@@ -3,7 +3,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm, PoemForm
+from .forms import CommentForm, PoemForm, UserRegisterForm
 from django.contrib.auth.models import User
 from django.utils.text import slugify
 from django.contrib import messages
@@ -147,3 +147,16 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('poem_details', args=[slug]))
+
+
+def regisrer(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'Account created for {username}!')
+            return redirect('profile')
+        else:
+            form = UserRegisterForm()
+        return render(request, 'account/signup.html', {'form': form})
