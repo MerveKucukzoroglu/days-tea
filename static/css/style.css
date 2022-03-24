@@ -13,6 +13,12 @@ body {
     color: #6E5678;
 }
 
+@media screen and (max-width: 350px) {
+    .logo {
+        font-size: 35px;
+    }
+}
+
 /* .menu{
     float: right;
 } */
