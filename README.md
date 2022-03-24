@@ -51,14 +51,31 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
 ## Existing Features
 * **Home Page**
     * The home page is minimal content to not bother user with loads of information. The page has a Navigation bar and two buttons on the page. If the user is not registered user and not logged in. The navbar has a login/register options and the button to take user ot login page.
-        ![Home Page](/assets/images/home-page.png)
+        
+        ![Home Page](/static/assets/images/home-page.png)
 
     * If the user is logged in member, the navigation bar will have an accunts icon and instead of login, one of the buttons takes the user to their account profile.
-    ![Home Page](/assets/images/member-home-page.png)
+        
+        ![Home Page](/static/assets/images/member-home-page.png)
     
     * The Poem button takes any site user to the list of poems page for any user to access and read.
 
-    
+* **Poems Page**
+    * Poems page is the page to showcase list of all poems. 
+    * The list is diplayed with a blurred image as background for that particular post. 
+    * The title and excrept of the poem, name of author, date of publication and number of likes visible for each post. 
+
+        ![Poems Page](/static/assets/images/post-list.png)
+
+    * This feature helps user choose which poem they want to read and have an insight about the poems content before openenig the post.
+    * The Poems page also has *Pagination* feature with each page upto 6 posts. 
+
+        ![Poems Page](/static/assets/images/next.png) 
+
+        ![Poems Page](/static/assets/images/prev.png)
+        
+
+
 # Future Features
 
 # Wireframes
