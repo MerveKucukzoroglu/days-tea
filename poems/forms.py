@@ -23,6 +23,5 @@ class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()
 
     class Meta:
-        email = {
-            'required': True
-        }
+        model = User
+        fields = ['username', 'email', 'password1', 'password2']
