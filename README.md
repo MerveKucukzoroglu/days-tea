@@ -81,7 +81,15 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * Registered members can publish and manage their poems (edit/delete).
     * These users can also like and comment on others posts.
         
-        ![Sign Up](/static/assets/images/sign-up.png) 
+        ![Sign Up](/static/assets/images/sign-up.png)
+    
+* **Sign In**
+    * Users can access their account via sign-in/login feature.
+    * By logging in the users can publish and manage their poems (edit/delete). They can also like and comment on others posts.
+    * Users can find login option from Menu and from home page.
+    * If the user don't have an accoun, they can click 'sign up' link on the login page and create their account.
+        
+        ![Sign-in](/static/assets/images/sign-in.png)
 
 # Future Features
 
