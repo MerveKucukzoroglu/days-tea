@@ -91,6 +91,13 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
         
         ![Sign-in](/static/assets/images/sign-in.png)
 
+* **Logout**
+    * The user can logout from Menu and from their accounts page.
+    * When the user wants to logout a pop-up modal is triggered for confirmation. 
+    * The logout modal asks the user if they confirm to logout.
+
+        ![Logout](/static/assets/images/log-out.png)
+
 # Future Features
 
 # Wireframes
