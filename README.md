@@ -56,7 +56,7 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * If the user is logged in member, the navigation bar will have an accunts icon and instead of login, one of the buttons takes the user to their account profile.
     ![Home Page](/assets/images/member-home-page.png)
     
-Poem button takes any site user to the poems page of the list of poems.
+    * The Poem button takes any site user to the list of poems page for any user to access and read.
 
     
 # Future Features
