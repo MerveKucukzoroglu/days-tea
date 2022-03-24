@@ -52,6 +52,18 @@ body {
     margin: 30px;
 }
 
+/*Media queries for post list box*/
+@media screen and (max-width: 400px) {
+    .list-box {
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 400px) {
+    .list-box {
+        margin: 20px;
+    }
+}
+
 .image-container {
     height: 240px;
     width: auto;
