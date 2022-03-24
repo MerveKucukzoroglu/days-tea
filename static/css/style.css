@@ -228,6 +228,14 @@ body {
     color:#6E5678;
 }
 
+.nav-link {
+    color:#393939;
+}
+
+.nav-link:hover {
+    color:#6E5678;
+}
+
 /*Media queries for navbar*/
 @media screen and (max-width: 400px) {
     .fa-user {
