@@ -97,6 +97,13 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * The logout modal asks the user if they confirm to logout.
 
         ![Logout](/static/assets/images/log-out.png)
+    
+* **User Account / Profile Page**
+    * Once the user is registered or logged in, they have a user profile page. 
+    * In this page users can publish a poem, or manage their poems. 
+    * If they want, they can access the logout feature through the logout button from this page as well.
+
+        ![User Account](/static/assets/images/user-account.png)
 
 # Future Features
 
