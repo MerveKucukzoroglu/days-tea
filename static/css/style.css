@@ -13,7 +13,8 @@ body {
     color: #6E5678;
 }
 
-@media screen and (max-width: 350px) {
+/*Logo media queries*/
+@media screen and (max-width: 400px) {
     .logo {
         font-size: 35px;
     }
@@ -225,6 +226,26 @@ body {
 
 .fa-user:hover {
     color:#6E5678;
+}
+
+/*Media queries for navbar*/
+@media screen and (max-width: 400px) {
+    .fa-user {
+        color:#393939;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .nav-link {
+        margin: 0;
+        padding:0;
+        float: right;
+    }
+
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .profile-item {
