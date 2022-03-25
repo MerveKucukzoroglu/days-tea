@@ -140,6 +140,16 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
 
         ![Delete a poem](/static/assets/images/delete.png)
 
+* **Like and Comment on a Poem Post**
+    * All the site visiters can view the comments and the number of likes.
+    * The unregistered site visiters cannot view the comment box to write a comment. Once they register, then it is visible for them and they can post a comment on any post they want.
+
+        ![View likes and comments](/static/assets/images/view-like-comment.png)
+
+    * The registered site members can like and comment on a post.
+
+        ![Like and comment](/static/assets/images/registered-like-comment.png)
+
 # Future Features
 
 # Wireframes
