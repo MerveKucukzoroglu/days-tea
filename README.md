@@ -104,6 +104,16 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * If they want, they can access the logout feature through the logout button from this page as well.
 
         ![User Account](/static/assets/images/user-account.png)
+    
+* **Publish a Poem**
+    * Creating and adding a poem by a registered user is possible. 
+    * The user can publish a poem after signing in and from their profile page.
+    * The user must enter a title, content and image. The excrept is optional if the user want to enter a brief explanation about their poem.
+
+        ![Publish/Add poem](/static/assets/images/publish.png)
+
+    * Once the poem is published, the poem is submitted for approval to the admin. The submitted poem can be viewed/edited/deleted by the owner from 'Manage my poems Page'.
+
 
 # Future Features
 
