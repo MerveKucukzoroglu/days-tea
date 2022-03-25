@@ -5,10 +5,16 @@ I have used django TestCase for manually testing views, forms and models files.
 * Testing Models: Models are tested while testing views and forms as well. But in addition, I tested if the models shows that featured image is a requirement and successfully sent to the database.
 
 # Testing
-* Lighthouse testing results:
+* *Lighthouse* testing results:
 
     ![lighthouse](/static/assets/images/lighthouse.png)
 
-* [W3C Markup Validation Service](https://validator.w3.org/)
+* *[W3C Markup Validation Service](https://validator.w3.org/)* No errors or warnings found:
+
+    ![html validation](/static/assets/images/html-validation.png)
+
+* *[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)* No errors or warnings found:
+
+    ![css validation](/static/assets/images/css-validation.png)
 
 # BUGS
