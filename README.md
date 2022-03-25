@@ -114,6 +114,16 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
 
     * Once the poem is published, the poem is submitted for approval to the admin. The submitted poem can be viewed/edited/deleted by the owner from 'Manage my poems Page'.
 
+* **Manage My Poems Page**
+    * User has the control to their published and pending approval poems.
+    * The user can see the list of thier own poems from 'Manage My Poems' page.
+    * Each poem listed has information about that particular post/poem. 
+    * Status of poem: If the poem is sent for approval and is not yet publlished, it displays "pending approval on the top". If it is approved by the admin and is published, at top it displays "Published" with a green icon next to it.
+    * The poem title, excrept and the date/time of submission is present separately for each post.
+    * Finally, the buttons for editing and deleting options are given for the user management.
+    * The listing is sorted out from latest created/updated at the top of the page and the old ones are below.
+
+        ![Manage My Poems](/static/assets/images/manage-my-poems.png)
 
 # Future Features
 
