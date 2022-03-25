@@ -122,8 +122,16 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * The poem title, excrept and the date/time of submission is present separately for each post.
     * Finally, the buttons for editing and deleting options are given for the user management.
     * The listing is sorted out from latest created/updated at the top of the page and the old ones are below.
+    * The poems are approved by the admin. This is to ensure that poems submitted are by the user and is not by another poet.
 
         ![Manage My Poems](/static/assets/images/manage-my-poems.png)
+
+* **Edit a Poem**
+    * The authenticated and owner of the poem can only edit the poem.
+    * Both the pending approval poems and published (approved) poems can be edited. 
+    * The poems that are selected for editing are prepopulated form that is ready for editing.
+
+         ![Edit a poem](/static/assets/images/edit.png)
 
 # Future Features
 
