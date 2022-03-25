@@ -190,6 +190,8 @@ Only one color shades are used throughout to keep the user focused more on the c
 
 This project has one main app, poems blog app.
 
+Throughout the project development, GitHub projects is used. Click [here](https://github.com/MerveKucukzoroglu/harmonic-poems/projects/1) to view the process.
+
 # Databases
 As the Harmonic Poems require a database, I have created two database models:
     ![Wireframes](/static/assets/images/w-models.png)
@@ -207,24 +209,22 @@ Comment model handles the content of the comment, the username of the person com
 * Python
 
 # Frameworks, Libraries & Tools Used
-* Bootstrap
-* Django
-* GitHub
-* GitPod
-* Balsamiq Wireframes
-* Google Fonts
-* Fontawesome
-* Heroku
-* Coolors
-* SQlite
-* PostgreSQL
-* Cloudinary
-* AmIResponsinve
-* Lighthouse
-* W3C Markup Validation Service
-* W3C CSS Validation Service
-* JSHint
-* PEP8
+* Bootstrap - grid, layout, columns, cards and forms structure.
+* Django - django frameworks to manage apps.
+* GitHub - to store the overall project repository.
+* GitPod - used as workspace to do the coding.
+* Balsamiq Wireframes - To design the wireframe of the complete project.
+* Google Fonts - to brandize 'Harmonic Poems' with google fonts. Used for logo and all the written content.
+* Fontawesome - fontawesome icons for social media links and as additional design.
+* Heroku - for the [deployement](#deployment) of the project.
+* Coolors - to choose the color palette and color shades.
+* PostgreSQL - database storage of the models.
+* Cloudinary - image and static files storage.
+* AmIResponsinve - responsiveness of the site.
+* Lighthouse - used for testing site functionality.
+* W3C Markup Validation Service - used for HTML testing.
+* W3C CSS Validation Service - used for CSS testing
+* PEP8 - used for Python files testing.
 
 # Testing
 
