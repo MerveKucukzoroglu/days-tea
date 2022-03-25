@@ -183,13 +183,22 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * User Account Page:
         ![Wireframes](/static/assets/images/w-user-account-page.png)
 
-
-
 # Structure
+The structure idea for Harmonic Poems was to keep it simple and unnecessary-content-free. The simplicity helps user to easily access and navigate within the application. 
+
+Only one color shades are used throughout to keep the user focused more on the content and if any important information is to be delivered to user, such as alerts or post status. 
+
+This project has one main app, poems blog app.
 
 # Databases
-## Post Model
-## Comment Model
+As the Harmonic Poems require a database, I have created two database models:
+    ![Wireframes](/static/assets/images/w-models.png)
+
+## Post Model:
+Post model handles poems details: title, content, approval status, date created/updated, featured image, excrept and likes. This post model handles the base for confirming user/author authentication to manage their own poems.
+    
+## Comment Model:
+Comment model handles the content of the comment, the username of the person commenting, date/time of commenting.
 
 # Technologies Used
 
