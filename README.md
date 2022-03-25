@@ -227,6 +227,7 @@ Comment model handles the content of the comment, the username of the person com
 * PEP8 - used for Python files testing.
 
 # Testing
+*Testing* and *bugs* are documented [here](/static/assets/documents/TESTING.md).
 
 # Deployment
 
