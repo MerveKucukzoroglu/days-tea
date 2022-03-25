@@ -18,3 +18,9 @@ I have used django TestCase for manually testing views, forms and models files.
     ![css validation](/static/assets/images/css-validation.png)
 
 # BUGS
+Throughout the development project, I came accross several bugs. I have noted them in projects page as issues in Github, you can view them [here](https://github.com/MerveKucukzoroglu/harmonic-poems/issues?q=label%3Abug+is%3Aclosed). The bugs found and resolved are as follows:
+
+* [Wire-up poems list page once opened.](https://github.com/MerveKucukzoroglu/harmonic-poems/issues/22): 
+    * The list of post is not visible when the page is opened. 
+    * Contacted Code institute tutor support. The issue was in views.py.
+    * Details can be viewed along with the bugs screenshots [here](https://github.com/MerveKucukzoroglu/harmonic-poems/issues/22).
