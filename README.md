@@ -133,6 +133,13 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
 
          ![Edit a poem](/static/assets/images/edit.png)
 
+* **Delete a Poem**
+    * The authenticated and owner of the poem can only delete the poem.
+    * Both the pending approval poems and published (approved) poems can be deleted. 
+    * The poems that are chosen to be deleted asks the user for confirmation by pop-up alert on the window.
+
+        ![Delete a poem](/static/assets/images/delete.png)
+
 # Future Features
 
 # Wireframes
