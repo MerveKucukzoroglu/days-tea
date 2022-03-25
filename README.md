@@ -158,6 +158,32 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
 * Follow other poet members.
 
 # Wireframes
+* Each pages wireframes includes mobile(small screen), tablet(medium screen), desktop(large screens).
+    * Home page:
+        ![Wireframes](/static/assets/images/w-home.png)
+
+    * Login page:
+        ![Wireframes](/static/assets/images/w-login.png)
+
+    * Manage My Poems page:
+        ![Wireframes](/static/assets/images/w-manage-my-poems.png)
+
+    * Poem Content:
+        ![Wireframes](/static/assets/images/w-poem-content.png)
+    
+    * Poem List:
+        ![Wireframes](/static/assets/images/w-poem-lists.png)
+    
+    * Publish Poem:
+        ![Wireframes](/static/assets/images/w-publish-poem.png)
+    
+    * Register:
+        ![Wireframes](/static/assets/images/w-register.png)
+
+    * User Account Page:
+        ![Wireframes](/static/assets/images/w-user-account-page.png)
+
+
 
 # Structure
 
