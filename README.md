@@ -229,7 +229,18 @@ Comment model handles the content of the comment, the username of the person com
 # Testing
 *Testing* and *bugs* are documented [here](/static/assets/documents/TESTING.md).
 
-# Deployment
+# Deployment:
+Deployement has been done to [Herokuapps](https://www.heroku.com/).
+
+* The initial deployment was immediately after cretaing all the file directories within the repository. This is to ensure and overcome any deployment error before hand and resolve the issue before it gets more complicated.
+    
+    * I have followed Code Institute's [Django Blog Cheat Sheet](https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf) steps to follow, create and deploy the project on Herokuapps. 
+
+    * To open an account in [Heroku](https://www.heroku.com/):
+        * [Signup here](https://signup.heroku.com/) if you do not have an account already.
+        * After you fill in all the information for account and sign in, you will be on Dashbord. Here is where you will create an application.
+        * Click on New => Create new app.
+        * Choose a name to your application and select location that you are based.
 
 # Credits
 
