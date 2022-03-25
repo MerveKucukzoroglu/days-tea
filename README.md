@@ -200,9 +200,31 @@ Post model handles poems details: title, content, approval status, date created/
 ## Comment Model:
 Comment model handles the content of the comment, the username of the person commenting, date/time of commenting.
 
-# Technologies Used
+# Technologies Used:
+* HTML
+* CSS
+* JavaScript
+* Python
 
 # Frameworks, Libraries & Tools Used
+* Bootstrap
+* Django
+* GitHub
+* GitPod
+* Balsamiq Wireframes
+* Google Fonts
+* Fontawesome
+* Heroku
+* Coolors
+* SQlite
+* PostgreSQL
+* Cloudinary
+* AmIResponsinve
+* Lighthouse
+* W3C Markup Validation Service
+* W3C CSS Validation Service
+* JSHint
+* PEP8
 
 # Testing
 
