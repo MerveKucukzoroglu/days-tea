@@ -151,6 +151,11 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
         ![Like and comment](/static/assets/images/registered-like-comment.png)
 
 # Future Features
+* Connect with Google translate API, so users can submit poems from different languages and also translate to language they want.
+* Members can save poems that they like (inn save category) and go back to read it later.
+* Users can set up their own profile page, add information about themselves, upload a profile picture and connect with other members.
+* Create a community group and vote for their own admin/admins to review their poems.
+* Follow other poet members.
 
 # Wireframes
 
