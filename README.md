@@ -243,5 +243,17 @@ Deployement has been done to [Herokuapps](https://www.heroku.com/).
         * Choose a name to your application and select location that you are based.
 
 # Credits
+During the process of project development, there have been various sources that gave me idea how to do a particular feature or fix a bug. The following are the sources that I got knowledge from:
+* [Stack Overflow](https://stackoverflow.com/)
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/#)
+* [Django Project Documentation](https://www.djangoproject.com/)
+* [Code Instiute](https://codeinstitute.net/se/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+SWE+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=14660337051&hsa_grp=134087657984&hsa_ad=581817633089&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjw0PWRBhDKARIsAPKHFGgmnuTJCpzeJBqKg9fy2p-7NlU8NY95XaXmoPzBpuDdIekQWqUKxocaAso5EALw_wcB) course materials and Django Blog Walkthrough Project.
+* [Bootstrap Navbar](https://getbootstrap.com/docs/5.0/components/navbar/)
+* [Bootstrap Modal](https://getbootstrap.com/docs/5.1/components/modal/#tooltips-and-popovers)
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+* [User registration email form by Corey Schafer](https://www.youtube.com/watch?v=q4jPR-M0TAQ&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=6)
+* [Coolors](https://coolors.co/) color palette
+
 
 # Acknowledgements
+I would like to acknowledge and present my thanks to Tim Nelson, my mentor from Code Insitute for his guidance and constant support. It wouldn't have been possible without the amazing community in Slack, Tutors of Code insitute Tutor supports, and my friends who constantly motivated and supported me. 
