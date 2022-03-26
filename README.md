@@ -52,11 +52,11 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
 * **Home Page**
     * The home page is minimal content to not bother user with loads of information. The page has a Navigation bar and two buttons on the page. If the user is not registered user and not logged in. The navbar has a login/register options and the button to take user ot login page.
         
-        ![Home Page](/static/assets/images/home-page.png)
+        ![Home Page](/documentation/home-page.png)
 
     * If the user is logged in member, the navigation bar will have an accunts icon and instead of login, one of the buttons takes the user to their account profile.
         
-        ![Home Page](/static/assets/images/member-home-page.png)
+        ![Home Page](/documentation/member-home-page.png)
     
     * The Poem button takes any site user to the list of poems page for any user to access and read.
 
@@ -65,14 +65,14 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * The list is diplayed with a blurred image as background for that particular post. 
     * The title and excrept of the poem, name of author, date of publication and number of likes visible for each post. 
 
-        ![Poems Page](/static/assets/images/post-list.png)
+        ![Poems Page](/documentation/post-list.png)
 
     * This feature helps user choose which poem they want to read and have an insight about the poems content before openenig the post.
     * The Poems page also has *Pagination* feature with each page upto 6 posts. 
 
-        ![Poems Page](/static/assets/images/next.png) 
+        ![Poems Page](/documentation/next.pgn) 
 
-        ![Poems Page](/static/assets/images/prev.png)
+        ![Poems Page](/documentation/prev.png)
         
 * **Sign Up**
     * Users can register and create their own account. 
@@ -81,7 +81,7 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * Registered members can publish and manage their poems (edit/delete).
     * These users can also like and comment on others posts.
         
-        ![Sign Up](/static/assets/images/sign-up.png)
+        ![Sign Up](/documentation/sign-up.png)
     
 * **Sign In**
     * Users can access their account via sign-in/login feature.
@@ -89,28 +89,28 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * Users can find login option from Menu and from home page.
     * If the user don't have an accoun, they can click 'sign up' link on the login page and create their account.
         
-        ![Sign-in](/static/assets/images/sign-in.png)
+        ![Sign-in](/documentation/sign-in.png)
 
 * **Logout**
     * The user can logout from Menu and from their accounts page.
     * When the user wants to logout a pop-up modal is triggered for confirmation. 
     * The logout modal asks the user if they confirm to logout.
 
-        ![Logout](/static/assets/images/log-out.png)
+        ![Logout](/documentation/log-out.png)
     
 * **User Account / Profile Page**
     * Once the user is registered or logged in, they have a user profile page. 
     * In this page users can publish a poem, or manage their poems. 
     * If they want, they can access the logout feature through the logout button from this page as well.
 
-        ![User Account](/static/assets/images/user-account.png)
+        ![User Account](/documentation/user-account.png)
     
 * **Publish a Poem**
     * Creating and adding a poem by a registered user is possible. 
     * The user can publish a poem after signing in and from their profile page.
     * The user must enter a title, content and image. The excrept is optional if the user want to enter a brief explanation about their poem.
 
-        ![Publish/Add poem](/static/assets/images/publish.png)
+        ![Publish/Add poem](/documentation/publish.png)
 
     * Once the poem is published, the poem is submitted for approval to the admin. The submitted poem can be viewed/edited/deleted by the owner from 'Manage my poems Page'.
 
@@ -124,31 +124,31 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * The listing is sorted out from latest created/updated at the top of the page and the old ones are below.
     * The poems are approved by the admin. This is to ensure that poems submitted are by the user and is not by another poet.
 
-        ![Manage My Poems](/static/assets/images/manage-my-poems.png)
+        ![Manage My Poems](/documentation/manage-my-poems.png)
 
 * **Edit a Poem**
     * The authenticated and owner of the poem can only edit the poem.
     * Both the pending approval poems and published (approved) poems can be edited. 
     * The poems that are selected for editing are prepopulated form that is ready for editing.
 
-         ![Edit a poem](/static/assets/images/edit.png)
+         ![Edit a poem](/documentation/edit.png)
 
 * **Delete a Poem**
     * The authenticated and owner of the poem can only delete the poem.
     * Both the pending approval poems and published (approved) poems can be deleted. 
     * The poems that are chosen to be deleted asks the user for confirmation by pop-up alert on the window.
 
-        ![Delete a poem](/static/assets/images/delete.png)
+        ![Delete a poem](/documentation/delete.png)
 
 * **Like and Comment on a Poem Post**
     * All the site visiters can view the comments and the number of likes.
     * The unregistered site visiters cannot view the comment box to write a comment. Once they register, then it is visible for them and they can post a comment on any post they want.
 
-        ![View likes and comments](/static/assets/images/view-like-comment.png)
+        ![View likes and comments](/documentation/view-like-comment.png)
 
     * The registered site members can like and comment on a post.
 
-        ![Like and comment](/static/assets/images/registered-like-comment.png)
+        ![Like and comment](/documentation/registered-like-comment.png)
 
 # Future Features
 * Connect with Google translate API, so users can submit poems from different languages and also translate to language they want.
@@ -160,28 +160,28 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
 # Wireframes
 * Each pages wireframes includes mobile(small screen), tablet(medium screen), desktop(large screens).
     * Home page:
-        ![Wireframes](/static/assets/images/w-home.png)
+        ![Wireframes](/documentation/w-home.png)
 
     * Login page:
-        ![Wireframes](/static/assets/images/w-login.png)
+        ![Wireframes](/documentation/w-login.png)
 
     * Manage My Poems page:
-        ![Wireframes](/static/assets/images/w-manage-my-poems.png)
+        ![Wireframes](/documentation/w-manage-my-poems.png)
 
     * Poem Content:
-        ![Wireframes](/static/assets/images/w-poem-content.png)
+        ![Wireframes](/documentation/w-poem-content.png)
     
     * Poem List:
-        ![Wireframes](/static/assets/images/w-poem-lists.png)
+        ![Wireframes](/documentation/w-poem-lists.png)
     
     * Publish Poem:
-        ![Wireframes](/static/assets/images/w-publish-poem.png)
+        ![Wireframes](/documentation/w-publish-poem.png)
     
     * Register:
-        ![Wireframes](/static/assets/images/w-register.png)
+        ![Wireframes](/documentation/w-register.png)
 
     * User Account Page:
-        ![Wireframes](/static/assets/images/w-user-account-page.png)
+        ![Wireframes](/documentation/w-user-account-page.png)
 
 # Structure
 The structure idea for Harmonic Poems was to keep it simple and unnecessary-content-free. The simplicity helps user to easily access and navigate within the application. 
@@ -194,7 +194,7 @@ Throughout the project development, GitHub projects is used. Click [here](https:
 
 # Databases
 As the Harmonic Poems require a database, I have created two database models:
-    ![Wireframes](/static/assets/images/w-models.png)
+    ![Wireframes](/documentation/w-models.png)
 
 ## Post Model:
 Post model handles poems details: title, content, approval status, date created/updated, featured image, excrept and likes. This post model handles the base for confirming user/author authentication to manage their own poems.
@@ -227,7 +227,7 @@ Comment model handles the content of the comment, the username of the person com
 * PEP8 - used for Python files testing.
 
 # Testing
-*Testing* and *bugs* are documented [here](/static/assets/documents/TESTING.md).
+*Testing* and *bugs* are documented [here](/TESTING.md).
 
 # Deployment:
 Deployement has been done to [Herokuapps](https://www.heroku.com/).
