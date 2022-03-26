@@ -92,7 +92,18 @@ I have used django TestCase for automated testing views, forms and models files.
         ![Test Comments Form](/documentation/test-comment-form.png)
 
 
-* **Testing Models**: Models are tested while testing views and forms as well. But in addition, I tested if the models shows that featured image is a requirement and successfully sent to the database.
+## Testing Models:
+* Models are tested while testing views and forms as well. But in addition, I tested if the models shows that featured image is a requirement and successfully sent to the database:
+
+    ```python
+        class TestModels(TestCase):
+            def test_has_featured_image(self):
+            self.assertTrue(Post.featured_image)
+    ```
+
+    Result:
+        
+    ![Test Models](/documentation/test-models.png)
 
 # Testing
 * *Lighthouse* testing results:
