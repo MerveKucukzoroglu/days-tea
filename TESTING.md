@@ -2,7 +2,7 @@
 I have used django TestCase for automated testing views, forms and models files.
 
 
-* **TESTING VIEWS**: 
+## TESTING VIEWS: 
 * Tested if the views are funcitoning as expected and returns pages that the user needs to be at.
     * Testing Index/Home page view:
         ```python
@@ -45,7 +45,7 @@ I have used django TestCase for automated testing views, forms and models files.
     ![Test Views](/documentation/test-views.png)
 
 
-* **TESTING FORMS**: 
+## TESTING FORMS: 
 * Tested Poems Post form and Comment Form to make sure fields are as expected and the form is submitted to where it should:
     * Testing Poems Form:
         ```python
@@ -72,6 +72,25 @@ I have used django TestCase for automated testing views, forms and models files.
     Result:
         
     ![Test Poem Form](/documentation/test-poem-form.png)
+
+    * Testing Comments Form:
+        ```python
+        class TestCommentForm(TestCase):
+
+            def test_post_title_is_required(self):
+                form = CommentForm(({'body': ''}))
+                self.assertFalse(form.is_valid())
+                self.assertIn('body', form.errors.keys())
+                self.assertEqual(form.errors['body'][0], 'This field is required.')
+
+            def test_fields_are_explicit_in_form_metaclass(self):
+                form = CommentForm()
+                self.assertEqual(form.Meta.fields, ('body',))
+        ```
+        Result:
+        
+        ![Test Comments Form](/documentation/test-comment-form.png)
+
 
 * **Testing Models**: Models are tested while testing views and forms as well. But in addition, I tested if the models shows that featured image is a requirement and successfully sent to the database.
 
