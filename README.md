@@ -227,7 +227,7 @@ Comment model handles the content of the comment, the username of the person com
 * PEP8 - used for Python files testing.
 
 # Testing
-*Testing* and *bugs* are documented [here](/TESTING.md).
+*Unit Testing* *Validator Testing* and *Bugs* are documented [here](/TESTING.md).
 
 # Deployment:
 Deployement has been done to [Herokuapps](https://www.heroku.com/).
