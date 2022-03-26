@@ -1,6 +1,48 @@
-# Unit Testing
+# UNIT TESTING
 I have used django TestCase for automated testing views, forms and models files.
-* **Testing Views**: Tested if the views are funcitoning as expected and returns pages that the user needs to be at.
+* **TESTING VIEWS**: 
+* Tested if the views are funcitoning as expected and returns pages that the user needs to be at.
+    * Testing Index/Home page view:
+        ```python
+        class TestIndexViews(TestCase):
+            def test_get_index_page(self):
+                response = self.client.get('/')
+                self.assertEqual(response.status_code, 200)
+                self.assertTemplateUsed(response, 'index.html')
+        ```
+
+    * Testing Poem Lists Page View:
+        ```python
+        class TestPostListViews(TestCase):
+        def test_get_post_list_page(self):
+            response = self.client.get('/poem_list/')
+            self.assertEqual(response.status_code, 200)
+            self.assertTemplateUsed(response, 'poem_list.html')
+        ```
+    
+    * Testing Profile Page View:
+        ```python
+        class TestProfileViews(TestCase):
+            def test_profile_page(self):
+                response = self.client.get('/profile')
+                self.assertEqual(response.status_code, 200)
+                self.assertTemplateUsed(response, 'profile.html')
+        ```
+
+    * Testing Adding Poems / Publish Poems Page View:
+        ```python
+        class TestPublishPoemViews(TestCase):
+            def test_can_publish_poem(self):
+                response = self.client.get('/publish')
+                self.assertEqual(response.status_code, 200)
+                self.assertTemplateUsed(response, 'publish.html')
+        ```
+    
+    **Result:**
+        
+    ![Test Views](/documentation/test-views.png)
+
+
 * **Testing Forms**: Tested Poems Post form and Comment Form to make sure fields are as expected and the form is submitted to where it should.
 * **Testing Models**: Models are tested while testing views and forms as well. But in addition, I tested if the models shows that featured image is a requirement and successfully sent to the database.
 
