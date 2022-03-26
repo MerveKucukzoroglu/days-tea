@@ -1,5 +1,7 @@
 # UNIT TESTING
 I have used django TestCase for automated testing views, forms and models files.
+
+
 * **TESTING VIEWS**: 
 * Tested if the views are funcitoning as expected and returns pages that the user needs to be at.
     * Testing Index/Home page view:
@@ -14,10 +16,10 @@ I have used django TestCase for automated testing views, forms and models files.
     * Testing Poem Lists Page View:
         ```python
         class TestPostListViews(TestCase):
-        def test_get_post_list_page(self):
-            response = self.client.get('/poem_list/')
-            self.assertEqual(response.status_code, 200)
-            self.assertTemplateUsed(response, 'poem_list.html')
+            def test_get_post_list_page(self):
+                response = self.client.get('/poem_list/')
+                self.assertEqual(response.status_code, 200)
+                self.assertTemplateUsed(response, 'poem_list.html')
         ```
     
     * Testing Profile Page View:
@@ -43,7 +45,34 @@ I have used django TestCase for automated testing views, forms and models files.
     ![Test Views](/documentation/test-views.png)
 
 
-* **Testing Forms**: Tested Poems Post form and Comment Form to make sure fields are as expected and the form is submitted to where it should.
+* **TESTING FORMS**: 
+* Tested Poems Post form and Comment Form to make sure fields are as expected and the form is submitted to where it should:
+    * Testing Poems Form:
+        ```python
+        class TestPoemForm(TestCase):
+
+            def test_post_title_is_required(self):
+                form = PoemForm(({'title': ''}))
+                self.assertFalse(form.is_valid())
+                self.assertIn('title', form.errors.keys())
+                self.assertEqual(form.errors['title'][0], 'This field is required.')
+
+            def test_post_content_is_required(self):
+                form = PoemForm(({'content': ''}))
+                self.assertFalse(form.is_valid())
+                self.assertIn('content', form.errors.keys())
+                self.assertEqual(form.errors['content'][0], 'This field is required.')
+
+            def test_fields_are_explicit_in_form_metaclass(self):
+                form = PoemForm()
+                self.assertEqual(
+                    form.Meta.fields, ('title', 'content', 'excerpt', 'featured_image')
+                    )
+        ```
+    Result:
+        
+    ![Test Poem Form](/documentation/test-poem-form.png)
+
 * **Testing Models**: Models are tested while testing views and forms as well. But in addition, I tested if the models shows that featured image is a requirement and successfully sent to the database.
 
 # Testing
