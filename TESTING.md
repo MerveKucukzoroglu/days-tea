@@ -105,16 +105,44 @@ I have used django TestCase for automated testing views, forms and models files.
         
     ![Test Models](/documentation/test-models.png)
 
-# Testing
-* *Lighthouse* testing results:
+# Validator Testing
+## Lighthouse
+* Testing results:
 
     ![lighthouse](/documentation/lighthouse.png)
 
-* *[W3C Markup Validation Service](https://validator.w3.org/)* No errors or warnings found:
+## [W3C Markup Validation Service](https://validator.w3.org/)
+*  No errors or warnings found:
+    
+    * Home Page
+        ![html home](/documentation/html-home.png)
+    
+    * Poem List Page
+        ![html poem list page](/documentation/html-poem-list.png)
+    
+    * Poem Details
+        ![html poem details](/documentation/html-poem-detail.png)
+    
+    * Sign-up page
+        ![sign up](/documentation/html-signup.png)
+    
+    * Login page
+        ![login](/documentation/html-login.png)
+    
+    * Logged in home page
+        ![Logged in home](/documentation/html-loggedin-home.png)
+    
+    * Logout
+        ![logout](/documentation/html-logout.png)
+    
+    * Poem Publish Page
+        ![html publish page](/documentation/html-publish.png)
+    
+    * Profile
+        ![profile page](/documentation/html-profile.png)
 
-    ![html validation](/static/assets/images/html-validation.png)
-
-* *[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)* No errors or warnings found:
+## [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+* No errors or warnings found:
 
     ![css validation](/documentation/css-validation.png)
 
