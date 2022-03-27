@@ -656,6 +656,15 @@ I have followed Code Institute's <a href="https://codeinstitute.s3.amazonaws.com
 
 </details>
 
+<br>
+
+In order to make a local copy of this repository, you can type the following into your IDE terminal:
+* `git clone hhttps://github.com/MerveKucukzoroglu/reading-tracker.git`
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/MerveKucukzoroglu/reading-tracker)
+
 
 # Credits
 During the process of project development, there have been various sources that gave me idea how to do a particular feature or fix a bug. The following are the sources that I got knowledge from:
@@ -667,8 +676,35 @@ During the process of project development, there have been various sources that 
 * [Bootstrap Modal](https://getbootstrap.com/docs/5.1/components/modal/#tooltips-and-popovers)
 * [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 * [User registration email form and views by Corey Schafer](https://www.youtube.com/watch?v=q4jPR-M0TAQ&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=6) for future email verification purposes.
+    * forms.py 
+        ```python
+        class UserRegisterForm(UserCreationForm):
+        email = forms.EmailField()
+
+        class Meta:
+            model = User
+            fields = ['username', 'email', 'password1', 'password2']
+        ```
+    * Views.py
+        ```python
+            def register(request):
+                if request.method == 'POST':
+                    form = UserRegisterForm(request.POST)
+                    if form.is_valid():
+                        form.save()
+                        username = form.cleaned_data.get('username')
+                        messages.success(request, f'Account created for {username}!')
+                        return redirect('profile')
+                    else:
+                        form = UserRegisterForm()
+                return render(request, 'account/signup.html', {'form': form})
+
+        ```
 * [Coolors](https://coolors.co/) color palette.
-* [AmIResponsive]()for mockup of the site.
+
+    ![Coolors](/documentation/coolors.png)
+
+* [AmIResponsive](http://ami.responsivedesign.is/) for mockup of the site.
 
 
 # Acknowledgements
