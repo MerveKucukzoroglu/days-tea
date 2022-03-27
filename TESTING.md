@@ -1,3 +1,18 @@
+# TABLE OF CONTENT:
+* [Unit Testing](#unit-testing)
+    * [Testing Views](#testing-views)
+    * [Testing Forms](#testing-forms)
+    * [Testing Models](#testing-models)
+* [Validator Testing](#validator-testing)
+    * [Lighthouse Testing](#lighthouse)
+    * [W3C Markup Validation](#w3c-markup-validation-servicehttpsvalidatorw3org)
+    * [W3C CSS Validation Service](#w3c-css-validation-servicehttpsjigsaww3orgcss-validator)
+    * [PEP8 Python Validator](#pep8-python-validatorhttppep8onlinecom)
+* [Bugs](#bugs)
+* [User Story Testing](#user-story-testing)
+* [Browser Compatability](#browser-compatability)
+* [Responsiveness Testing](#responsiveness-testing)
+
 # UNIT TESTING
 I have used django TestCase for automated testing views, forms and models files.
 
@@ -112,7 +127,7 @@ I have used django TestCase for automated testing views, forms and models files.
     ![lighthouse](/documentation/lighthouse.png)
 
 ## [W3C Markup Validation Service](https://validator.w3.org/)
-*  No errors or warnings found:
+*  Errors and warnings found, reported as [bug](#bug-found-while-html-validation-testing), resolved the issues and all tests passed. [Click here](#bug-found-while-html-validation-testing) to view bug details.
     
     * Home Page:
         
@@ -233,3 +248,27 @@ Throughout the development project, I came accross several bugs. I have noted th
         * `id="deleteModal{{ post.id }}"` and the button to trigger it would have `data-bs-target="#deleteModal{{ post.id }}"`
     *  * Details can be viewed along with the bugs screenshots [here](https://github.com/MerveKucukzoroglu/harmonic-poems/issues/37).
 
+* ### Bug found while HTML validation Testing:
+    * During the HTML validator testing for some of the poems content page, I came accross an error and warning with `<o:p>`. 
+
+        ![html error](/documentation/html-error.png)
+
+    * The error displayed was for each paragraph. This was not familiar to me as there was nothing like `<o:p>` anywhere within my code. To figure out what is causing the error and where it is coming from, I opened one of the poems and did 'View Page Source'.
+
+        ![page-source-error-view](/documentation/page-source-error-view.png)
+
+    * I did a search on Google for what `<o:p>` means and how did it end up in my code if I have not added it myself. I found that "`<o:p>` means 'Office namespace'" from [Stack Overflow](https://stackoverflow.com/questions/7808968/what-do-op-elements-do-anyway#:~:text=For%20your%20specific%20question..%20the,equivalent%22%20and%20they%20have%20more.):
+
+        ![Stack explanation for op error](/documentation/stack-explanation.png)
+
+    *  This meant that the poems I added contained hidden Microsoft word tags. These hidden "Office Paragraph `<o:p>` tags" got carried along with the poem content when I copy + pasted the poem direclty from Microsoft Word document to the admin panel.
+
+    * As a solution, my mentor from Code Institute - Tim Nelson, suggested me to first paste those poems that contained this bug to any 'Notes' file. The 'Notes' removes any kind of html tags or decorators. And later copy + paste them to their relevant posts. 
+    
+    * After following these steps, all the tests passed HTML validator testing without any issues or warnings.
+
+# User Story Testing
+
+# Browser Compatability
+
+# Responsiveness Testing
