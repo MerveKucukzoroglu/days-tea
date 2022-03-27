@@ -327,3 +327,15 @@ Throughout the development project, I came accross several bugs. I have noted th
     ![Chrome](/documentation/chrome.png)
 
 # Responsiveness Testing
+
+* Desktop - Large Screen sizes:
+
+    ![Desktop](/documentation/chrome.png)
+
+* Ipad - Medium Screen sizes:
+
+    ![Ipad](/documentation/ipad.png)
+
+* Mobile - Small Screen Sizes:
+
+    ![Mobile](/documentation/mobile.png)
