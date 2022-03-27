@@ -229,20 +229,41 @@ Comment model handles the content of the comment, the username of the person com
 * PEP8 - used for Python files testing.
 
 # Testing
-*Unit Testing* *Validator Testing* and *Bugs* are documented [here](/TESTING.md).
+*Unit Testing*, *Validator Testing*, and *Bugs* are documented [here](/TESTING.md).
 
 # Deployment:
-Deployement has been done to [Herokuapps](https://www.heroku.com/).
+This project was deployed to Heroku. "Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps."- [Heroku.](https://www.heroku.com/)
 
-* The initial deployment was immediately after cretaing all the file directories within the repository. This is to ensure and overcome any deployment error before hand and resolve the issue before it gets more complicated.
-    
-    * I have followed Code Institute's [Django Blog Cheat Sheet](https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf) steps to follow, create and deploy the project on Herokuapps. 
+<details>
+<summary>Steps to open account in Heroku:</summary>
+<br>
+<ul>
+    <li>
+        <a href="https://signup.heroku.com/">Signup here </a>if you do not have an account already.
+        <img src="documentation/signup-heroku.png">
+    </li>
+    <li>
+        After you fill in all the information for account and sign in, you will be on <a href="https://dashboard.heroku.com/apps">Dashbord.</a> Here is where you will create an application.
+    </li>
+    <li>
+        <p>Click on New => Create new app.</p>
+        <img src="documentation/new-app.png">
+    </li>
+    <li>Choose a name to your application and select location that you are based.</li>
+</ul>
+</details>
 
-    * To open an account in [Heroku](https://www.heroku.com/):
-        * [Signup here](https://signup.heroku.com/) if you do not have an account already.
-        * After you fill in all the information for account and sign in, you will be on Dashbord. Here is where you will create an application.
-        * Click on New => Create new app.
-        * Choose a name to your application and select location that you are based.
+<br>
+
+The initial deployment was immediately after cretaing all the file directories within the repository. This is to ensure and overcome any deployment error before hand and resolve the issue before it gets more complicated.
+
+<br>
+
+<details>
+<summary>Steps to Deployment</summary>    
+I have followed Code Institute's [Django Blog Cheat Sheet](https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf) steps to follow, create and deploy the project on Herokuapps. 
+</details>
+
 
 # Credits
 During the process of project development, there have been various sources that gave me idea how to do a particular feature or fix a bug. The following are the sources that I got knowledge from:
