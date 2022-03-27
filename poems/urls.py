@@ -1,4 +1,4 @@
-"""Poems posts view page"""
+"""Poems posts urls page"""
 from . import views
 from django.urls import path
 

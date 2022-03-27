@@ -114,37 +114,49 @@ I have used django TestCase for automated testing views, forms and models files.
 ## [W3C Markup Validation Service](https://validator.w3.org/)
 *  No errors or warnings found:
     
-    * Home Page
+    * Home Page:
+        
         ![html home](/documentation/html-home.png)
     
-    * Poem List Page
+    * Poem List Page:
+        
         ![html poem list page](/documentation/html-poem-list.png)
     
-    * Poem Details
+    * Poem Details:
+        
         ![html poem details](/documentation/html-poem-detail.png)
     
-    * Sign-up page
+    * Sign-up page:
+        
         ![sign up](/documentation/html-signup.png)
     
-    * Login page
+    * Login page:
+        
         ![login](/documentation/html-login.png)
     
-    * Logged in home page
+    * Logged in home page:
+        
         ![Logged in home](/documentation/html-loggedin-home.png)
     
-    * Logout
+    * Logout:
+        
         ![logout](/documentation/html-logout.png)
     
-    * Poem Publish Page
+    * Poem Publish Page:
+        
         ![html publish page](/documentation/html-publish.png)
     
-    * Profile
+    * Profile:
+        
         ![profile page](/documentation/html-profile.png)
 
 ## [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 * No errors or warnings found:
 
     ![css validation](/documentation/css-validation.png)
+
+## [PEP8 Python Validator](http://pep8online.com/)
+* 
 
 # BUGS
 [Click here to view Bugs issues in GitHub](https://github.com/MerveKucukzoroglu/harmonic-poems/issues?q=is%3Aissue+is%3Aclosed+label%3Abug)
