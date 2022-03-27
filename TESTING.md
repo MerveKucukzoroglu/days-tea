@@ -270,6 +270,11 @@ Throughout the development project, I came accross several bugs. I have noted th
     
     * After following these steps, all the tests passed HTML validator testing without any issues or warnings.
 
+* **Unsolved Bug**:
+    * Once the user submits a post, if the admin adds any style to the content such as separating paragraphs or text content with Summernote Admin panel; the user sees all the html and css decorators while editing a post they own.
+
+        ![unsolved bug](/documentation/unsolved-bug.png)
+
 # User Story Testing
 
 ## Admin
