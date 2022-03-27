@@ -20,6 +20,9 @@ class PoemForm(forms.ModelForm):
 
 
 class UserRegisterForm(UserCreationForm):
+    """User registration form.
+    Code added for future email verification purposes.
+    The credits for this form is by 'Corey Schafer', youtube tutor"""
     email = forms.EmailField()
 
     class Meta:
