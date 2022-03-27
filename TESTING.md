@@ -10,6 +10,9 @@
     * [PEP8 Python Validator](#pep8-python-validatorhttppep8onlinecom)
 * [Bugs](#bugs)
 * [User Story Testing](#user-story-testing)
+    * [Admin](#admin)
+    * [Member User](#member-user)
+    * [General User](#general-user)
 * [Browser Compatability](#browser-compatability)
 * [Responsiveness Testing](#responsiveness-testing)
 
@@ -268,6 +271,45 @@ Throughout the development project, I came accross several bugs. I have noted th
     * After following these steps, all the tests passed HTML validator testing without any issues or warnings.
 
 # User Story Testing
+
+## Admin
+* As a Site Admin I can approve or disapprove posts so that I can filter out objectionable posts.
+* As a Site Admin I can create, read, update and delete posts so that I can manage my blog content.
+* As a Site Admin I can aproove Posts before it is published so that the site content will be consistent.
+
+    ![Admin](/documentation/admin-approve.png)
+
+## Member User
+* As a Member User I can register an account so that I can manage my posts, comment and like.
+
+    ![Register](/documentation/sign-up.png)
+
+* As a Member User I can post/add/edit/delete poems so that I can share and manage my poems.
+
+    ![Profile](/documentation/user-account.png)
+
+* As a Member User I can like or unlike a post so that I can interact with the content.
+* As a Member User I can leave comments on a post so that I can be involved in the conversation.
+
+    ![Likes and Comments](/documentation/registered-like-comment.png)
+
+* As a Member User I can view my posts status of approval so that I can manage my poems.
+
+    ![Manage My Poems](/documentation/manage-my-poems.png)
+
+## General User
+* As a Site User I can view a list of posts so that I can select one to read.
+
+    ![Post List](/documentation/post-list.png)
+
+* As a Site User I can click on a post so that I can read the full text.
+
+    ![Post content](/documentation/user-post-content.png)
+
+* As a Site User / Admin user I can view comments on an individual post so that I can read the conversation.
+* As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
+
+    ![likes and comments](/documentation/likes-comments.png)
 
 # Browser Compatability
 
