@@ -261,7 +261,399 @@ The initial deployment was immediately after cretaing all the file directories w
 
 <details>
 <summary>Steps to Deployment</summary>    
-I have followed Code Institute's [Django Blog Cheat Sheet](https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf) steps to follow, create and deploy the project on Herokuapps. 
+I have followed Code Institute's <a href="https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf" target="_blank">Django Blog Cheat Sheet</a> steps to follow, create and deploy the project on Herokuapps.
+
+<br>
+
+<h2>Step 1: Installing Django and supporting libraries</h2>
+
+<br>
+
+<h3>In the terminal</h3>
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Install Django and gunicorn:</td>
+        <td>pip3 install django gunicorn</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Install supporting libraries: </td>
+        <td>pip3 install dj_database_url psycopg2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Install Cloudinary Libraries</td>
+        <td>pip3 install dj3-cloudinary-storage</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Create requirements file</td>
+        <td>pip3 freeze --local > requirements.txt</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Create Project</td>
+        <td>django-admin startproject PROJ_NAME . (Don’t forget the . )</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Create App</td>
+        <td>python3 manage.py startapp APP_NAME</td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In the setting.py</h3>
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Add to installed apps</td>
+        <td>‘APP_NAME’,</td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In the terminal</h3>
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Migrate Changes</td>
+        <td>python3 manage.py migrate</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Run Server to Test</td>
+        <td>python3 manage.py runserver</td>
+    </tr>
+</table>
+
+<br>
+
+<h2>Step 2: Deploying an app to Heroku</h2>
+
+<br>
+<ul> 4 stages:
+    <li> Create the Heroku app</li>
+    <li>Attach the database</li>
+    <li>Prepare our environment and settings.py file</li>
+    <li>Get our static and media files stored on Cloudinary</li>
+</ul>
+
+<br>
+
+<h3>2.1 Create the Heroku app</h3>
+
+<p>1. Create new Heroku App</p>
+<img src="documentation/create-app.png">
+
+<p>2. Add Database to App Resources - Located in the Resources Tab, Add-ons, search andadd e.g. ‘Heroku Postgres’</p>
+<img src="documentation/heroku-postgress.png">
+
+<p>3. Copy DATABASE_URL - Located in the Settings Tab, in Config Vars, Copy Text</p>
+<img src="documentation/config-var.png">
+
+<br>
+
+<h3>2.2 Attach the Database:</h3>
+<h3>In Gitpod</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Create new env.py file on top level directory</td>
+        <td>E.g. env.py</td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In env.py</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Import os library</td>
+        <td>import os</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Set environment variables</td>
+        <td>os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link"</td>
+    </tr>
+     <tr>
+        <td>7</td>
+        <td>Add in secret key</td>
+        <td>os.environ["SECRET_KEY"] = "Make up a randomSecretKey"</td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In Herkou.com</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Add Secret Key to Config Vars</td>
+        <td>SECRET_KEY, “randomSecretKey”</td>
+    </tr>
+</table>
+<img src = "documentation/add-config-var.png">
+
+<br>
+
+<h3>2.3 Prepare our environment and settings.py file:</h3>
+<h3>In settings.py</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Reference env.py </td>
+        <td><img src="documentation/import-env.png"/></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Remove the insecure secret key and replace - links to the secret key variable on Heroku</td>
+        <td>SECRET_KEY = os.environ.get('SECRET_KEY')</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Replace DATABASES Section (Comment out the old DataBases Section) - links to the DATATBASE_URL variable on Heroku</td>
+        <td><img src="documentation/replace-database.png"/></td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In the terminal</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Make Migrations</td>
+        <td>python3 manage.py migrate</td>
+    </tr>
+</table>
+
+<br>
+
+<h3>2.4 Get our static and media files stored on Cloudinary:</h3>
+<h3>In Cloudinary</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Copy your CLOUDINARY_URL e.g. API Environment Variable.</td>
+        <td>From Cloudinary Dashboard</td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In env.py</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Add Cloudinary URL to env.py - be sure to paste in the correct section of the link</td>
+        <td>os.environ["CLOUDINARY_URL"] = "cloudinary://9444:SUZi@dbhyuj5mc"</td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In Heroku</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Add Cloudinary URL to Heroku Config Vars - be sure to paste in the correct section of the link</td>
+        <td>Add to Settings tab in Config Vars e.g. COUDINARY_URL, cloudinary://9444:SUZi@dbhyuj5mc</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Add DISABLE_COLLECTSTATIC to Heroku Config Vars (temporary step for the moment, must be removed before deployment)</td>
+        <td><img src="documentation/DISABLE_COLLECTSTATIC.png"></td>
+    </tr>
+</table>
+
+
+<br>
+
+<h3>In settings.py</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Add Cloudinary Libraries to installed apps (note: order is important)</td>
+        <td><img src="documentation/cloudinary.png"></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Tell Django to use Cloudinary to store media and static files. Place under the Static files Note</td>
+        <td><img src="documentation/static.png"></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Link file to the templates directory in Heroku. Place under the BASE_DIR line</td>
+        <td>TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Change the templates directory to TEMPLATES_DIR. Place within the TEMPLATES array</td>
+        <td>'DIRS': [TEMPLATES_DIR]</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Add Heroku Hostname to ALLOWED_HOSTS</td>
+        <td>ALLOWED_HOSTS = ["PROJ_NAME.herokuapp.com", "localhost"]</td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In Gitpod</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Create 3 new folders on top level directory</td>
+        <td>media, static, templates</td>
+    </tr>
+     <tr>
+        <td>11</td>
+        <td>Create procfile on the top level directory</td>
+        <td>Procfile</td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In Procfile</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Add code</td>
+        <td>web: gunicorn PROJ_NAME.wsgi</td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In Terminal</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Add, Commit and Push </td>
+        <td>
+            <p>git add . </p>
+            <p>git commit -m “Deployment Commit”</p>
+            <p>git push</p>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<h3>In Heroku</h3>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Steps</th>
+        <th>Code</th>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>Deploy Content manually through heroku/</td>
+        <td>E.g Github as deployment method, on main branch</td>
+    </tr>
+</table>
+
+<br>
+
+<p>Before the final Deployement: Remove the "DISABLE_COLLECTSTATIC" from Heroku Config vars, and Change Debug to "False" in settings.py</p>
+
 </details>
 
 
