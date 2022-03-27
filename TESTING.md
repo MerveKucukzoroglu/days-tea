@@ -317,5 +317,13 @@ Throughout the development project, I came accross several bugs. I have noted th
     ![likes and comments](/documentation/likes-comments.png)
 
 # Browser Compatability
+* Checked and verified that the site works on different browsers. 
+* Safari:
+
+    ![Safari](/documentation/safari.png)
+
+* Chrome:
+
+    ![Chrome](/documentation/chrome.png)
 
 # Responsiveness Testing
