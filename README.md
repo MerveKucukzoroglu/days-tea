@@ -253,9 +253,9 @@ During the process of project development, there have been various sources that 
 * [Bootstrap Navbar](https://getbootstrap.com/docs/5.0/components/navbar/)
 * [Bootstrap Modal](https://getbootstrap.com/docs/5.1/components/modal/#tooltips-and-popovers)
 * [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
-* [User registration email form by Corey Schafer](https://www.youtube.com/watch?v=q4jPR-M0TAQ&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=6)
-* [Coolors](https://coolors.co/) color palette
-* [AmIResponsive]()for mockup of the site
+* [User registration email form and views by Corey Schafer](https://www.youtube.com/watch?v=q4jPR-M0TAQ&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=6) for future email verification purposes.
+* [Coolors](https://coolors.co/) color palette.
+* [AmIResponsive]()for mockup of the site.
 
 
 # Acknowledgements

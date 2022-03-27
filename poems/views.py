@@ -10,6 +10,7 @@ from django.contrib import messages
 
 
 def index(request):
+    """Views for home page"""
     return render(request, 'index.html')
 
 
@@ -51,12 +52,14 @@ def publish(request):
 
 
 def my_poems(request):
+    """Authenticated user views their own poems"""
     logged_in_user = request.user
     logged_in_user_posts = Post.objects.filter(author=logged_in_user)
     return render(request, 'my_poems.html', {'posts': logged_in_user_posts})
 
 
 def edit_post(request, post_id):
+    """Authenticated user views and edit their own poems"""
     post = get_object_or_404(Post, id=post_id)
     if request.method == 'POST':
         poem_form = PoemForm(request.POST, instance=post)
@@ -74,6 +77,7 @@ def edit_post(request, post_id):
 
 
 def delete_post(request, post_id):
+    """Authenticated user views and edits their own poems"""
     post = get_object_or_404(Post, id=post_id)
     post.delete()
     messages.success(request, 'Poem deleted!')
@@ -149,7 +153,10 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('poem_details', args=[slug]))
 
 
-def regisrer(request):
+def register(request):
+    """User registration form views
+    Code added for future email verification purposes.
+    The credits for this view is by 'Corey Schafer', youtube tutor"""
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
