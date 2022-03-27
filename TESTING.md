@@ -271,9 +271,11 @@ Throughout the development project, I came accross several bugs. I have noted th
     * After following these steps, all the tests passed HTML validator testing without any issues or warnings.
 
 * **Unsolved Bug**:
-    * Once the user submits a post, if the admin adds any style to the content such as separating paragraphs or text content with Summernote Admin panel; the user sees all the html and css decorators while editing a post they own.
+    * Once the user submits a poem, and if the admin edits any part of the users submission, such as a space or extra line, all the html content(tags and css) gets visible to user if they want to edit their own post after. 
 
         ![unsolved bug](/documentation/unsolved-bug.png)
+
+    * If the post submitted by the user in not touched by admin, these codes are hidden to user, when they want to edit back their own post.
 
 # User Story Testing
 
