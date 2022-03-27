@@ -72,7 +72,7 @@ Please find all my defined user stories [here](https://github.com/MerveKucukzoro
     * This feature helps user choose which poem they want to read and have an insight about the poems content before openenig the post.
     * The Poems page also has *Pagination* feature with each page upto 6 posts. 
 
-        ![Poems Page](/documentation/next.pgn) 
+        ![Poems Page](/documentation/next.png) 
 
         ![Poems Page](/documentation/prev.png)
         
