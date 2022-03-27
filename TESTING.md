@@ -156,7 +156,51 @@ I have used django TestCase for automated testing views, forms and models files.
     ![css validation](/documentation/css-validation.png)
 
 ## [PEP8 Python Validator](http://pep8online.com/)
-* 
+* No errors or warnings found.
+* models.py :
+
+    ![models.py](/documentation/pep8-models.png)
+
+* admin.py:
+
+    ![admin.py](/documentation/pep8-admin.png)
+
+* poems - urls.py:
+
+    ![poems-urls.py](/documentation/pep8-urls.png)
+
+* views.py:
+
+    ![views.py](/documentation/pep8-views.png)
+
+* forms.py:
+
+    ![forms.py](/documentation/pep8-forms.png)
+
+* test_views.py:
+
+    ![test_views.py](/documentation/pep8-test-views.png)
+    
+* test_models.py:
+
+    ![test_models.py](/documentation/pep8-test-models.png)
+
+* test_forms.py:
+
+    ![test_forms.py](/documentation/pep8-test-forms.png)
+
+* apps.py:
+
+    ![apps.py](/documentation/pep8-apps.png)
+
+* asgi.py:
+
+    ![asgi.py](/documentation/pep8-asgi.png)
+
+* project - urls.py:
+
+    ![project - urls.](/documentation/pep8-project-urls.png)
+
 
 # BUGS
 [Click here to view Bugs issues in GitHub](https://github.com/MerveKucukzoroglu/harmonic-poems/issues?q=is%3Aissue+is%3Aclosed+label%3Abug)
