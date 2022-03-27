@@ -1,12 +1,12 @@
 """admin panel"""
 from django.contrib import admin
 from .models import Post, Comment
-from django_summernote.admin import SummernoteModelAdmin
+# from django_summernote.admin import SummernoteModelAdmin
 
 
 @admin.register(Post)
-class PostAdmin(SummernoteModelAdmin):
-    """summernote model for admin"""
+class PostAdmin(admin.ModelAdmin):
+    """model for admin panel"""
     list_display = ('title', 'slug', 'approved', 'status', 'created_on')
     search_fields = ['title', 'content']
     prepopulated_fields = {'slug': ('title',)}
