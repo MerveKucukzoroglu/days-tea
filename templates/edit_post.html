@@ -11,7 +11,6 @@
     <p>Editing as: {{ user.username }}</p>
     <form method="POST">
         {{ poem_form | crispy }}
-        {{ post.content | safe }}
         {% csrf_token %}
         <button type="submit" class="btn btn-signup btn-lg">Update Poem</button>
         {% if updated %}
