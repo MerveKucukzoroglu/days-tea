@@ -509,7 +509,7 @@ I have followed Code Institute's <a href="https://codeinstitute.s3.amazonaws.com
     <tr>
         <td>2</td>
         <td>Add Cloudinary URL to env.py - be sure to paste in the correct section of the link</td>
-        <td>os.environ["CLOUDINARY_URL"] = "cloudinary://9444:SUZi@dbhyuj5mc"</td>
+        <td>os.environ["CLOUDINARY_URL"] = "cloudinary://9444:ExampleCloudinaryi@dbhyuj5mc"</td>
     </tr>
 </table>
 
@@ -526,7 +526,7 @@ I have followed Code Institute's <a href="https://codeinstitute.s3.amazonaws.com
     <tr>
         <td>3</td>
         <td>Add Cloudinary URL to Heroku Config Vars - be sure to paste in the correct section of the link</td>
-        <td>Add to Settings tab in Config Vars e.g. COUDINARY_URL, cloudinary://9444:SUZi@dbhyuj5mc</td>
+        <td>Add to Settings tab in Config Vars e.g. COUDINARY_URL, cloudinary://9444:ExampleCloudinaryi@dbhyuj5mc</td>
     </tr>
     <tr>
         <td>4</td>
